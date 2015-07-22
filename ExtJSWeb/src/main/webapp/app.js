@@ -24,7 +24,6 @@ Ext.application({
 
 			});
 			console.log('App lauchned');
-
 		}
 
 		);

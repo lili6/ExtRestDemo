@@ -20,7 +20,7 @@ Ext.define('ExtJSWebSpring.view.Login', {
 			anchor : '100%',
 			labelWidth : 60,
 			allowBlank : false,
-			vtype : 'alphanum',
+			//vtype : 'alphanum', 任何字符都可以
 			minLength : 4,
 			maxLength : 30,
 			msgTarget : 'under'
@@ -29,12 +29,14 @@ Ext.define('ExtJSWebSpring.view.Login', {
 			name : 'user',
 			itemId : 'user',
 			fieldLabel : 'Username',
-			maxLength : 25
+			maxLength : 25         ,
+			emptyText:'请输入用户名'
 		}, {
 			name : 'password',
 			fieldLabel : 'Password',
 			inputType : 'password',
-			maxLength : 12
+			maxLength : 12         ,
+			emptyText:'请输入密码'
 		} ],
 		dockedItems : [ {
 
