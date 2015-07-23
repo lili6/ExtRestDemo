@@ -1,7 +1,7 @@
 Ext.define('ExtJSWebSpring.controller.LoginController', {
 	extend : 'Ext.app.Controller',
 
-	views : [ 'Login','GridDemo' ],
+	views : [ 'Login','GridDemo','PanelDemo' ],
 
 	init : function(application) {
 		this.control({
@@ -31,7 +31,7 @@ Ext.define('ExtJSWebSpring.controller.LoginController', {
 					'Content-Type': 'application/json; charset=utf-8',
 					'Access-Control-Allow-Origin':'*'
 				},
-				jsonData:{username:username,password:password},
+				jsonData:{username:username,password:password},          // post的json数据
 				scope:this,
 				/*params : {
 					user : username,
