@@ -4,8 +4,8 @@ Ext.application({
 	name : 'ExtJSWebSpring',
 
 	launch : function() {
-		//Ext.widget('login');
-		Ext.widget('paneldemo');
+		Ext.widget('login');
+		//Ext.widget('paneldemo');
 		/*var task = new Ext.util.DelayedTask(function() {
 			splashscreen.fadeOut({
 				duration : 1000,

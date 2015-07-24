@@ -54,12 +54,22 @@ Ext.define('ExtJSWebSpring.controller.LoginController', {
 					var result = Ext.JSON.decode(conn.responseText, true);
 
 					if (result.success) {
-						Ext.Msg.show({
-							title : 'Login successful....Wait for part 3 now ....',
-							msg : result.msg,
-							buttons : Ext.Msg.OK
+
+						Ext.toast({
+							html: '登录成功！',
+							title: '提示',
+							width: 200,
+							align: 't'
 						});
-						Ext.widget('grid');
+						/*Ext.Msg.show({
+							title : '提示',
+							//msg : result.msg,
+							msg : "登陆成功！",
+							buttons : Ext.Msg.OK
+						});*/
+						 //关闭当前的页面
+						login.close();
+						Ext.widget('grid');               //打开新的页面
 					} else {
 						Ext.Msg.show({
 							title : 'Login failed',

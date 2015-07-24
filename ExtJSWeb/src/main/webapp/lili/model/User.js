@@ -26,4 +26,4 @@ Ext.define('lili.model.User', {
         }
 
     ]
-})
+});

@@ -8,10 +8,10 @@ Ext.onReady(function() {
         title:"实例窗口",
         width:500,
         height:300,
-        layout:"fit",
+        layout:"fit",    //悬浮显示
         autoShow:true, // 自动显示
-        modal:false,
-        closable:false,
+        modal:true,     //模态打开时，只能此窗口可以操作，背景窗口不可操作
+        closable:true,
         maximizable: true,
         minimizable: true,
         items: [
