@@ -2,8 +2,10 @@ Ext.application({
 
 	controllers:['LoginController'],
 	name : 'ExtJSWebSpring',
+	views :[''],
 
 	launch : function() {
+		console.log('app is launched...' + Ext.getVersion('extjs'));
 		Ext.widget('login');
 		//Ext.widget('paneldemo');
 		/*var task = new Ext.util.DelayedTask(function() {
@@ -35,6 +37,7 @@ Ext.application({
 	/*	splashscreen = Ext.getBody()
 				.mask('Loading application', 'splashscreen');*/
 		console.log('App is init...');
+
 	}
 
 })
