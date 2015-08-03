@@ -2,9 +2,9 @@
  * Created by lili on 15/8/2.
  */
 
-Ext.namespace(Ext.lili);
-Ext.lili.languages = [
-    ['en','English','ascii'],
-    ['zh_CN','Simplified Chinese'],
-    ['ko','Korean']
+Ext.namespace(Ext.data);
+Ext.data.languages = [
+    {"code":"en","language":"English"},
+{"code":"zh_CN","language":"Simplified Chinese"},
+{"code":"ko","language":"Korean"}
 ]
