@@ -208,7 +208,7 @@ Ext.onReady(function() {
             //html:' <SCRIPT type="text/javascript" src="GridPanelDemo.js"></SCRIPT>'
             title: '普通Tab',
             html: "这只是一个非常普通的Tab。",
-            items:[{xtype:'button',text:'按钮'},combobox]
+            items:[{xtype:'button',text:'按钮'}]
 
         },
             {
