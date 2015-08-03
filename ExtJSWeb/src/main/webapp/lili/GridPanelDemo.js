@@ -9,6 +9,7 @@ Ext.onReady(function() {
         width: 600,
         height:300,
         margin:30,
+        title:'表格例子',
         columnLines:true,
         renderTo:Ext.getBody(),
         selModel:{
@@ -40,8 +41,21 @@ Ext.onReady(function() {
                 //双击事件的操作
             }
         },
-        bbar:{xtype:"pagingtoolbar",store:store,displayInfo:true}
+        bbar:{xtype:"pagingtoolbar",store:store,displayInfo:true},
 
+        tbar:[
+            {
+            xtype:'button',
+            text:'查询条件',
+                //cls: 'Add'
+                iconCls:'Find'
+            },
+            {
+                xtype:'button',
+                text:'新增',
+                iconCls:'Add'
+            }
+        ]
     })
 });
 

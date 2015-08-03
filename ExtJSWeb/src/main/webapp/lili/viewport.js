@@ -119,7 +119,7 @@ Ext.onReady(function() {
         width   : '100%',
         //align: right,
         items: [
-            {html:'<span style="color:#004B97;font-size:18px;font-weight:bold">韩国天龙运营查询系统</span>'},
+            {html:'<span style="color:#004B97;font-size:18px;font-weight:bold">MY EXTJS DMMO系统</span>'},
             '->',
             { xtype: 'tbspacer' },
 /*            {
@@ -148,18 +148,21 @@ Ext.onReady(function() {
             '-', // same as {xtype: 'tbseparator'} to create Ext.toolbar.Separator
             {
                 xtype:'button',
-                text:'用户管理'}, // same as {xtype: 'tbtext', text: 'text1'} to create Ext.toolbar.TextItem
+                text:'用户管理',
+                iconCls:'Group'}, // same as {xtype: 'tbtext', text: 'text1'} to create Ext.toolbar.TextItem
             { xtype: 'tbspacer' },// same as ' ' to create Ext.toolbar.Spacer
+
             {xtype:'button',
-                text:'注销'},
+                text:'帮助',
+            iconCls:'Help'},
+            {xtype:'button',
+                text:'注销',
+                iconCls:'Doorout'}
             //{ xtype: 'tbspacer', width: 50 }, // add a 50px space
-            {xtype:'button',
-                text:'帮助'}
         ]
     });
 
-//页头
-/*var head1 = new Ext.BoxComponent({
+    /*var head1 = new Ext.BoxComponent({
     region:'north',
     el: 'north'
 });*/
@@ -178,6 +181,16 @@ Ext.onReady(function() {
 
     });
 
+
+
+//页头
+//系统操作窗口
+
+
+
+//布局管理器
+
+
    var main= Ext.create('Ext.tab.Panel', {
         width: 400,
         height: 400,
@@ -189,34 +202,27 @@ Ext.onReady(function() {
             bodyPadding:10,
             html:'显示查询条件和列表'
         }, {title:'元宝获得查询',
-            closable:true},
+            closable:true,
+            //items:[grid]
+            //html:  '<iframe src="grid.html" width="100%" height="100%"></iframe>'
+            //html:' <SCRIPT type="text/javascript" src="GridPanelDemo.js"></SCRIPT>'
+            title: '普通Tab',
+            html: "这只是一个非常普通的Tab。",
+            items:[{xtype:'button',text:'按钮'},combobox]
+
+        },
             {
             title: 'Bar',
                 closable:true,
             tabConfig: {
                 title: 'Custom Title',
                 tooltip: 'A button tooltip'
+
             }
+
         }]
     });
-
-
-//系统操作窗口
-    var main1 = new Ext.tab.Panel({
-        region:'center',
-        deferredRender:false,
-        activeTab:0,
-        items:[{
-            title: '应用管理',
-            //html: '<iframe src="jsp/page/app.jsp" width="100%" height="100%"></iframe>'
-            html:'this is main'
-            /* autoScroll:true */
-        }]
-    });
-
-
-//布局管理器
-new Ext.Viewport({
+    new Ext.Viewport({
     layout:'border',
     items:[head,west,main]
 });
