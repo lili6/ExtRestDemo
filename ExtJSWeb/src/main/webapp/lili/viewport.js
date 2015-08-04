@@ -81,6 +81,17 @@ Ext.onReady(function() {
         valueField:'code',
         emptyText:'选择语言',
         hideLabel:true,
+        //iconCls:"Drink",
+
+        listConfig: {
+            getInnerTpl: function() {
+                // here you place the images in your combo
+                var tpl = '<div class="Flagad">'+
+
+                    '{language}</div>';
+                return tpl;
+            }
+        },
         listeners : {
             select: function (cd, record) {
                 var search = location.search,
