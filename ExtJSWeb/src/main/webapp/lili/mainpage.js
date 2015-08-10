@@ -30,27 +30,27 @@ Ext.onReady(function(){
                 text:'会员中心',
                 url:'http://www.163.com',
                 leaf:true,
-                iconCls:'icon-User'
+                iconCls:'User'
             }, {
                 text:'文章列表',
                 leaf:true,
                 url:'http://www.59code.com',
-                iconCls:'icon-Book'
+                iconCls:'Time'
             }, {
                 text:'图片仓库',
                 leaf:true,
                 url:'http://www.sina.com.cn',
-                iconCls:'icon-Image'
+                iconCls:'Pictures'
             }, {
                 text:'个人资料',
                 leaf:true,
                 url:'http://www.csdn.net',
-                iconCls:'icon-Vcard'
+                iconCls:'Vcard'
             }, {
                 text:'系统设置',
                 leaf:true,
                 url:'http://www.baidu.com',
-                iconCls:'icon-Cog'
+                iconCls:'Cog'
             }]
         }
     });
