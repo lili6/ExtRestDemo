@@ -1,3 +1,24 @@
 /**
  * Created by liguofang on 2015/8/11.
  */
+Ext.define('Invoice',{
+    extend:'Ext.data.Model',
+    //idProperty:'InvoiceID',
+    fields:[
+        {name:'InvoiceID',
+        type:'string'},
+        {name:'Client',
+        type:'string'},
+        {name:'Description',
+        type:'string'},
+        {name:'Date',
+        type:'date',
+        dateFormat:'Y-m-d'},
+        {name:'Amount',
+        type:'float'},
+        {name:'Currency',
+        type:'string'},
+        {name:'Status',
+        type:'string'}
+    ]
+});

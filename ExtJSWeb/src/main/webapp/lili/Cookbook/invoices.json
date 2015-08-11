@@ -1,0 +1,7 @@
+{"rows":[
+{"InvoiceID":"1","Client":"China阿里巴巴","Description":"淘宝公司","Date":"2015-01-02","Amount":12.34,"Currency":"CNY","Status":"上市公司"},
+{"InvoiceID":"1","Client":"京东","Description":"电商","Date":"2015-10-02","Amount":12.34,"Currency":"DSR","Status":"上市公司"}
+
+]
+}
+
